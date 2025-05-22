@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>WICKETSPRO - Live Cricket</title>
+  <link rel="stylesheet" href="style.css" />
+<script src="script.js"></script>
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <!-- 🔄 Loader -->
+  <div id="loader">
+    <div class="loader-circle"></div>
+    <p>Loading Live Scores...</p>
+  </div>
+
+  <!-- 🏏 Header -->
+  <header>
+    <h1>🏏 WICKETSPRO</h1>
+    <nav class="nav-links">
+      <a href="index.html" class="active">Live</a>
+      <a href="upcoming.html">Upcoming</a>
+      <a href="news.html">News</a>
+      <a href="rankings.html">Rankings</a>
+      <button class="theme-toggle" onclick="toggleTheme()">Toggle Theme</button>
+    </nav>
+  </header>
+
+  <!-- 🏟 Hero Banner -->
+  <section class="hero-section">
+  <h2>Live Cricket Action</h2>
+  <p>Get real-time updates from matches happening around the world.</p>
+</section>
+
+  <!-- 📺 Live Matches -->
+  <main>
+    <section id="live-matches">
+      <h2>Live Matches</h2>
+      <div id="live-container"></div>
+    </section>
+  </main>
+
+  <!-- 🔳 Popup Modal -->
+  <div class="modal" id="matchModal">
+    <div class="modal-content">
+      <h2>Match Details</h2>
+      <p id="matchDetails">Loading...</p>
+      <button onclick="document.getElementById('matchModal').classList.remove('active')">Close</button>
+    </div>
+  </div>
+
+  <script src="js/common.js"></script>
+  <script src="js/live.js"></script>
+  <footer>
+  <p>&copy; 2025 WICKETSPRO. All rights reserved.</p>
+  <p> |
+    <a href="#">Privacy</a> |
+    <a href="#">Contact</a>
+  </p>
+</footer>
+</div>
+</body>
+</html>

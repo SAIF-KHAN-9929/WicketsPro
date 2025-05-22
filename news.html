@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>WICKETSPRO - News</title>
+   <link rel="stylesheet" href="style.css" />
+<script src="script.js"></script>
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div id="loader">
+    <div class="loader-circle"></div>
+    <p>Loading News...</p>
+  </div>
+
+  <header>
+    <h1>🏏 WICKETSPRO</h1>
+    <nav class="nav-links">
+      <a href="index.html">Live</a>
+      <a href="upcoming.html">Upcoming</a>
+      <a href="news.html" class="active">News</a>
+      <a href="rankings.html">Rankings</a>
+      <button class="theme-toggle" onclick="toggleTheme()">Toggle Theme</button>
+    </nav>
+  </header>
+
+  <section class="hero-section">
+  <h2>Live Cricket Action</h2>
+  <p>Get real-time updates from matches happening around the world.</p>
+</section>
+
+  <main>
+    <section id="news-section">
+      <h2>Top Headlines</h2>
+      <div id="news-container"></div>
+    </section>
+  </main>
+
+  <script src="js/common.js"></script>
+  <script src="js/news.js"></script>
+  <footer>
+  <p>&copy; 2025 WICKETSPRO. All rights reserved.</p>
+  <p> |
+    <a href="#">Privacy</a> |
+    <a href="#">Contact</a>
+  </p>
+</footer>
+</body>
+</html>
